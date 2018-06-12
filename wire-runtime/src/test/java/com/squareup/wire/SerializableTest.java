@@ -58,7 +58,7 @@ public class SerializableTest {
         .result("tacos")
         .build();
     ByteString goldenSerialized = ByteString.decodeBase64("rO0ABXNyACdjb20uc3F1YXJldXAud2lyZS5NZXNz"
-        + "YWdlU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAlsABWJ5dGVzdAACW0JMAAxtZXNzYWdlQ2xhc3N0ABFMamF2YS9s"
+       /* + "YWdlU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAlsABWJ5dGVzdAACW0JMAAxtZXNzYWdlQ2xhc3N0ABFMamF2YS9s"
         + "YW5nL0NsYXNzO3hwdXIAAltCrPMX+AYIVOACAAB4cAAAAAkoY1IFdGFjb3N2cgAtY29tLnNxdWFyZXVwLndpcmUu"
         + "cHJvdG9zLnNpbXBsZS5TaW1wbGVNZXNzYWdlAAAAAAAAAAACAAxMAAhfcGFja2FnZXQAEkxqYXZhL2xhbmcvU3Ry"
         + "aW5nO0wAFGRlZmF1bHRfZm9yZWlnbl9lbnVtdAAuTGNvbS9zcXVhcmV1cC93aXJlL3Byb3Rvcy9mb3JlaWduL0Zv"
@@ -68,7 +68,7 @@ public class SerializableTest {
         + "bmFsTWVzc2FnZTtMAA5vcHRpb25hbF9pbnQzMnQAE0xqYXZhL2xhbmcvSW50ZWdlcjtMABNvcHRpb25hbF9uZXN0"
         + "ZWRfbXNndAA9TGNvbS9zcXVhcmV1cC93aXJlL3Byb3Rvcy9zaW1wbGUvU2ltcGxlTWVzc2FnZSROZXN0ZWRNZXNz"
         + "YWdlO0wABW90aGVycQB+AAdMAA9yZXBlYXRlZF9kb3VibGV0ABBMamF2YS91dGlsL0xpc3Q7TAAOcmVxdWlyZWRf"
-        + "aW50MzJxAH4AC0wABnJlc3VsdHEAfgAHeHIAGWNvbS5zcXVhcmV1cC53aXJlLk1lc3NhZ2UAAAAAAAAAAAIAAHhw"
+        + "aW50MzJxAH4AC0wABnJlc3VsdHEAfgAHeHIAGWNvbS5zcXVhcmV1cC53aXJlLk1lc3NhZ2UAAAAAAAAAAAIAAHhw"*/
     );
     Buffer buffer = new Buffer();
     buffer.write(goldenSerialized);
